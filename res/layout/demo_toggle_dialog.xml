@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <ToggleButton
+        android:id="@+id/demo_toggle_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textOff="Off"
+        android:textOn="On" />
+
+    <TextView
+        android:id="@+id/demo_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/demo_toggle_button"
+        android:layout_alignParentLeft="true"
+        android:text="Demo turned off"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+    
+    <Button
+        android:id="@+id/demo_dismiss_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/demo_toggle_button"
+        android:layout_centerHorizontal="true"     
+        android:layout_marginTop="3dip"
+        android:text="Back" />
+
+</RelativeLayout>

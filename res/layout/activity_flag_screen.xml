@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+	
+  <RelativeLayout 
+    android:id="@+id/searchLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <AutoCompleteTextView  
+        android:id="@+id/autoCompleteTextView"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_alignParentLeft="true"   
+        android:ems="10"  
+        android:hint="Enter here" 
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/flagSpeechSearch"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_alignBottom="@+id/autoCompleteTextView"
+        android:layout_marginRight="22dp"
+        android:layout_toLeftOf="@+id/clearSearch"
+        android:background="@drawable/speaker" 
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/clearSearch"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/flagSpeechSearch"
+        android:background="@drawable/clear" 
+        android:visibility="gone" />
+
+   </RelativeLayout>
+     
+    <ViewFlipper
+        android:id="@+id/flipper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/searchLayout"
+        android:layout_above="@+id/footer" >
+             
+        <ListView
+        	android:id="@+id/list"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+			android:divider="#0000FF"
+        	android:dividerHeight="0.5dp"       
+        	android:listSelector="@drawable/list_selector" />       
+       
+        <GridView
+         	android:numColumns="auto_fit"
+         	android:gravity="center"
+         	android:columnWidth="100dp"
+         	android:stretchMode="columnWidth"
+         	android:layout_width="fill_parent"
+         	android:layout_height="fill_parent"
+         	android:id="@+id/grid" />        
+        
+    </ViewFlipper>
+      
+  <!-- android:divider="#b5b5b5" -->
+    
+    <RelativeLayout
+    	android:id="@+id/footer"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentBottom="true"
+    	android:gravity="center" >
+
+    	<com.startapp.android.publish.banner.bannerstandard.BannerStandard
+       		android:id="@+id/banner_view_startApp"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content" />
+  	</RelativeLayout>
+    
+    <LinearLayout android:background="#44000000" 
+        android:id="@+id/demo_overlay"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"> <!-- This is alpha 68/255, black -->
+
+    <ImageView
+        android:id="@+id/demo_flag_screen"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:src="@+drawable/flags_256_india" />
+
+</LinearLayout>
+  </RelativeLayout>

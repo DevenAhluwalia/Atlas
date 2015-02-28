@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="75dip"
+        android:layout_height="75dip"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/feedback" />
+
+    <EditText
+        android:id="@+id/feedback_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/image"
+        android:layout_toRightOf="@+id/image"
+        android:hint="Found a Bug? \nIncorrect Flag info? \nGenreal Feedback?" />
+
+    <RadioGroup
+        android:id="@+id/feedback_radio"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:orientation="horizontal"
+        android:padding="5dip" >
+
+        <RadioButton
+            android:id="@+id/radioBug"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Bug" />
+
+        <RadioButton
+            android:id="@+id/radioFeedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feedback" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/feedback_dialogButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/feedback_radio"
+        android:text="Submit" />
+
+</RelativeLayout>

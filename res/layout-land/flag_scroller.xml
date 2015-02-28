@@ -1,0 +1,298 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+    
+    <ImageView     
+		android:id="@+id/list_image"   
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/image_bg" 
+	    android:layout_alignParentLeft="true"
+	    android:padding="5dip" />		
+    
+<ScrollView 
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_toRightOf="@+id/list_image" >
+	
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+	
+    	<TableLayout
+    		android:id="@+id/tableLayout1"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content" >
+		  
+		  <TableRow>
+    	    <TextView
+    		    android:text="Country Name"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:textColor="#040404"
+    		    android:textSize="15dip"
+    		    android:textStyle="bold"
+    		    android:typeface="sans" />
+    	    <TextView
+    	        android:id="@+id/cName"
+    	        android:layout_width="wrap_content"
+    		    android:layout_height="fill_parent"
+    	        android:text="Capital Name"
+    	        android:textColor="#343434"
+    	        android:textSize="15dp" />
+    	    <ImageView
+        		android:id="@+id/cPronounce"
+        		android:layout_width="30dip"
+        		android:layout_height="30dip"
+        		android:layout_marginTop="1dip"
+        		android:background="@drawable/speaker"
+        		android:layout_marginLeft="3dip" />   		
+		  </TableRow>
+		  
+		  <TableRow>
+    	    <TextView
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:text="Country Full Name"
+    		    android:textColor="#040404"
+    		    android:textSize="15dip"
+    		    android:textStyle="bold"
+    		    android:typeface="sans" />
+    		<TextView
+        		android:id="@+id/cFullName"
+        		android:layout_width="fill_parent"
+        		android:layout_height="fill_parent"
+        		android:layout_span="2"
+        		android:textColor="#343434"
+        		android:textSize="15dip"
+        		android:layout_marginTop="1dip"
+        		android:text="Country Full Name" />
+    	  </TableRow>
+		  
+    	  <TableRow>
+    	    <TextView
+    	        android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:text="Capital Name"
+    		    android:textColor="#040404"
+    		    android:textSize="15dip"
+    		    android:textStyle="bold"
+    		    android:typeface="sans" />
+    		<TextView
+        		android:id="@+id/cCapital"
+        		android:layout_width="wrap_content"
+    		    android:layout_height="fill_parent"
+    		    android:layout_span="2"
+        		android:textColor="#343434"
+        		android:textSize="15dip"
+        		android:layout_marginTop="1dip"
+        		android:text="Capital Name" />
+    	  </TableRow>
+    	      
+    	  <View
+			    android:layout_width="wrap_content"
+			    android:layout_height="1dip"
+			    android:background="#0000FF"
+			    android:layout_marginTop="2dip" />
+    	  
+    	  <TableRow>
+    	    <TextView
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:text="Language"
+    		    android:textColor="#040404"
+    		    android:textSize="15dip"
+    		    android:textStyle="bold"
+    		    android:typeface="sans" />
+    		<TextView
+        		android:id="@+id/cLang"
+        		android:layout_width="fill_parent"
+        		android:layout_height="fill_parent"
+        		android:textColor="#343434"
+        		android:layout_span="2"
+        		android:textSize="15dip"
+        		android:layout_marginTop="1dip"
+        		android:text="Language" />
+    	 </TableRow>
+    	 
+    	 <TableRow>
+    	   <TextView
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:text="Type of \nGovernment System"
+    		    android:textColor="#040404"
+    		    android:textSize="15dip"
+    		    android:textStyle="bold"
+    		    android:typeface="sans" />
+    		<TextView
+        		android:id="@+id/cGov"
+        		android:layout_width="fill_parent"
+        		android:layout_height="fill_parent"
+        		android:textColor="#343434"
+        		android:textSize="15dip"
+        		android:layout_span="2"
+        		android:layout_marginTop="1dip"
+        		android:text="Type of Government System" />
+    	 </TableRow>
+    		
+    	 <View
+			    android:layout_width="wrap_content"
+			    android:layout_height="1dip"
+			    android:background="#0000FF"
+			    android:layout_marginTop="2dip" />
+    	 
+    	 <TableRow>
+    	    <TextView
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:text="Continent"
+    		    android:textColor="#040404"
+    		    android:textSize="15dip"
+    		    android:textStyle="bold"
+    		    android:typeface="sans" />
+    		<TextView
+        		android:id="@+id/cCont"
+        		android:layout_width="fill_parent"
+        		android:layout_height="fill_parent"
+        		android:textColor="#343434"
+        		android:textSize="15dip"
+        		android:layout_span="2"
+        		android:layout_marginTop="1dip"
+        		android:text="Continent" />
+    	 </TableRow>
+    	 
+    	 <TableRow>
+    	    <TextView
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:text="Area"
+    		    android:textColor="#040404"
+    		    android:textSize="15dip"
+    		    android:textStyle="bold"
+    		    android:typeface="sans" />
+    		<TextView
+        		android:id="@+id/cArea"
+        		android:layout_width="fill_parent"
+        		android:layout_height="fill_parent"
+        		android:textColor="#343434"
+        		android:textSize="15dip"
+        		android:layout_span="2"
+        		android:layout_marginTop="1dip"
+        		android:text="Area" />
+    	 </TableRow>
+    	 
+    	 <TableRow>
+    	    <TextView
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:text="Population"
+    		    android:textColor="#040404"
+    		    android:textSize="15dip"
+    		    android:textStyle="bold"
+    		    android:typeface="sans" />
+    		<TextView
+        		android:id="@+id/cPop"
+        		android:layout_width="fill_parent"
+        		android:layout_height="fill_parent"
+        		android:textColor="#343434"
+        		android:textSize="15dip"
+        		android:layout_span="2"
+        		android:layout_marginTop="1dip"
+        		android:text="Population" />
+    	 </TableRow>
+    	 
+    	 <View
+			    android:layout_width="wrap_content"
+			    android:layout_height="1dip"
+			    android:background="#0000FF"
+			    android:layout_marginTop="2dip" />
+    	 
+    	 <TableRow>
+    	    <TextView
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:text="Currrency"
+    		    android:textColor="#040404"
+    		    android:textSize="15dip"
+    		    android:textStyle="bold"
+    		    android:typeface="sans" />
+    		<TextView
+        		android:id="@+id/cCurrency"
+        		android:layout_width="fill_parent"
+        		android:layout_height="fill_parent"
+        		android:textColor="#343434"
+        		android:textSize="15dip"
+        		android:layout_span="2"
+        		android:layout_marginTop="1dip"
+        		android:text="Currency" />
+    	 </TableRow>
+    	 
+    	 <TableRow>
+    	    <TextView
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:text="Calling Code"
+    		    android:textColor="#040404"
+    		    android:textSize="15dip"
+    		    android:textStyle="bold"
+    		    android:typeface="sans" />
+    		<TextView
+        		android:id="@+id/cColCode"
+        		android:layout_width="fill_parent"
+        		android:layout_height="fill_parent"
+        		android:textColor="#343434"
+        		android:textSize="15dip"
+        		android:layout_span="2"
+        		android:layout_marginTop="1dip"
+        		android:text="Calling Code" />
+    	 </TableRow>
+    	 
+    	 <TableRow>
+    	    <TextView
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:text="TLD"
+    		    android:textColor="#040404"
+    		    android:textSize="15dip"
+    		    android:textStyle="bold"
+    		    android:typeface="sans" />
+    		<TextView
+        		android:id="@+id/cTLD"
+        		android:layout_width="fill_parent"
+        		android:layout_height="fill_parent"
+        		android:textColor="#343434"
+        		android:textSize="15dip"
+        		android:layout_span="2"
+        		android:layout_marginTop="1dip"
+        		android:text="TLD" />
+    	 </TableRow>
+    
+    </TableLayout>
+	
+    	<TextView
+    	    android:id="@+id/cWiki"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:layout_marginTop="3dip"
+    	    android:text="Click to see Wikipedia"
+    	    android:textColor="#0000FF"
+    	    android:textSize="15dip"
+    	    android:padding="3dip"
+    	    android:gravity="center"
+    	    android:layout_below="@+id/tableLayout1" />
+    		
+    	<com.appflood.AFBannerView
+            android:id="@+id/banner_view_appFlood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+           
+        	android:gravity="center"
+        	android:layout_below="@+id/cWiki" />
+    		
+		</RelativeLayout>		
+  </ScrollView>
+</RelativeLayout>
